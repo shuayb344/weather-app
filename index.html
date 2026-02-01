@@ -11,31 +11,31 @@
 <body>
   <div class="card">
     <div class="search">
-    <input type="text" placeholder="Type City Name">
-    <button><img src="weather-app-img/images/search.png" ></button>
+    <input type="text" class="city-input"  placeholder="Type City Name...">
+    <button class="search-btn"><img src="weather-app-img/images/search.png" ></button>
   </div>
-  <div class="weather">
-    <h1><i class="fa-solid fa-location-dot"></i> Berlin</h1>
+  <h1 class="city city-name" ><i class="fa-solid fa-location-dot"></i></h1>
+  <div class="weather js-weather">
     <img src="weather-app-img/images/clouds.png" >
   </div>
-   <p>Today,12 September</p>
+   <p class="date datee"></p>
   <div class="temp-info">
    
-    <span>29°c</span>
-    <p class="condition">Cloudy</p>
+    <span class="temp">29°c</span>
+    <p class="condition js-condition">Cloudy</p>
     <div class="details">
       <div class="cols">
         <img src="weather-app-img/images/wind.png" >
         <div>
           <p>Wind</p>
-          <p>10 km/h</p>
+          <p class="wind">10 km/h</p>
         </div>
       </div>
       <div class="cols">
         <img src="weather-app-img/images/humidity.png" >
         <div>
           <p>humidity</p>
-          <p>50%</p>
+          <p class="humidity">50%</p>
         </div>
       </div>
     </div>
@@ -43,6 +43,6 @@
   </div>
   
 
-  <script src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 </html>

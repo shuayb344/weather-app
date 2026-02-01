@@ -17,6 +17,7 @@ body{
   padding: 50px 35px;
   text-align: center;
   color: #fff;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 .search{
   
@@ -51,12 +52,20 @@ body{
 .search button img{
   width: 16px;
 }
+.city-name{
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 30px;
+}
 .weather{
-  margin-top: 20px;
+  margin-top: 10px;
 
 }
 .weather img{
   width: 150px;
+}
+.datee{
+  font-size:18px ;
 }
 .card .temp-info{
   width: 80%;
