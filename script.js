@@ -8,7 +8,11 @@ async function weather(city){
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°c";
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%"
   document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
-  
+  if(data.name === undefined){
+    alert("City not found");
+    throw new Error("City not found");
+    
+  }
   
   return data;
   
@@ -20,6 +24,7 @@ const date = today.format('dddd, MMMM D');
 document.querySelector('.date').innerHTML = date;
 const input = document.querySelector('.city-input');
 document.querySelector('.search-btn').addEventListener("click", async function(){
+  if(input.value === '') return;
   await weather(input.value);
   const image = await weather(input.value).then(data => data.weather[0].main.toLowerCase());
     const iconHtml = `
