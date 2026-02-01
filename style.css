@@ -113,9 +113,9 @@ body{
 @media (max-width : 480px) {
   .card{
     padding: 20px;
-    margin: auto;
+    margin: 10px auto;
     height: auto;
-    margin-top: 10px;
+  
   }
   .search input{
     padding: 10px 15px;
@@ -129,11 +129,15 @@ body{
   .details{
     flex-direction: column;
     align-items: center;
+
   }
   .temp-info{
-    padding: 10px;
+    padding: 20px;
+    margin: 20px;
   }
   .temp-info p{
   font-size: 15px;
 }
+.temp-info span{
+  padding: auto;
 }
